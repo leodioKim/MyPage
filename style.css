@@ -1,117 +1,227 @@
-* {
-    padding: 0;
+
+
+body{
+    background-color: white;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*navigator*/
+
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin:0;
+    margin-left: 15px;
+}
+
+ul{
+    margin:0;
+}
+
+.site-name{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.nav-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*footer*/
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+
+.links>a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.footer>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
     margin: 0;
+    margin-top: 5px;
+}
+
+
+
+
+/* main Section*/
+#main-picture{
+    width: 1000px;
+    margin-top: 40px;
+    display: flex;
     
 }
-.mail{
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+/*profile-section*/
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+}
+
+
+#profile-picture{
+    width: 400px;
+    margin-right: 60px;
+}
+
+.introduction>h2{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+.introduction>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin-bottom: 40px;
+}
+
+#capability{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+
+    line-height: 30px;
+}
+
+
+/*Like section*/
+
+.Like-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin: 30px 100px;
+}
+
+.Like-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
     margin-top: 20px;
 }
-#git {
-    text-decoration: none;
-    color: black;
+
+.Like{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+
 }
-.background { 
-    animation: fadein 0.7s;
+
+
+.Like-icon{
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 15px;
 }
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-  }
-h3{
+
+.Like-intro{
+    margin-left: 30px;
+}
+
+
+.Like-name{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Like-exp{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin: 0px;
+}
+
+
+
+
+/*footer section*/
+
+.footer-comment{
     text-align: center;
 }
-.img {
-    position: relative;
-    float: left;
-    width: 200px;
-    height: 200px;
-}
-.about {
-    text-align: left;
-    margin-top: 70px;
-    padding-left: 50px;
-    font-size: 35px;
-    padding-bottom: 280px;
-    width: auto;
-    height: auto;
-}
-.about2 {
-    width: 600px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 100vh;
-    display: flex;
-    flex-direction: row; /*세로로 */
-    justify-content: space-between;
-    align-items: center;
-    font-size: 4rem;
-}
-.about3 {
-    font-size: 2rem;
-    padding-bottom: 350px;
-}
-body {
-    background-color: white;
+
+
+a[title="Freepik"]:hover{
     color: black;
-}
-.container { /*container 가운데 내용 */
-    width: 700px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /*세로로 */
-    justify-content: space-between;
-    align-items: center;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 1.2rem 0; /*헤더 위 여백*/
-    
-}
-header>p { /*헤더 왼쪽 제목 */
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-header>p>a{ /*헤더 왼쪽 제목 a태그 */
-    text-decoration: none;
-    color: black;
-}
-header>ul { /*헤더 메뉴 제목 */
-    display: flex; /*메뉴 가로로*/
-}
-header>ul>li { /* li */
-    list-style-type: none; /*li 리스트 스타일 제거*/
-    margin-left: 1.5rem; /* 간격 생성 */
-}
-header>ul>li>a { /* a */
-    text-decoration: none; /* 밑줄 삭제*/
-    font-size: 1.2rem; /* 글자 크기 */
-    font-weight: 800;
-    color: black;
+    text-decoration: underline;
 }
 
-.section { /* section */
-    padding: 0 1rem; 
-    text-align: center; /* 가운데 정렬 */
-    margin-bottom: 300px;
+a[title="Flaticon"]:hover{
+    color: black;
+    text-decoration: underline;
 }
-.section>p {
-    margin-bottom: 2rem;
-}
-.section>p:first-child { /* section 큰 글자 */
-    font-size: 4rem;
-    font-weight: 900;
-}
-.section>p:last-of-type { /* section 작은 글자 */
-    font-size: 2rem;
-    font-weight: 500;
-}
-
